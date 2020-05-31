@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@michaelachrisco/data": ["libs/data/src/index.ts"]
+      "@michaelachrisco/data": ["libs/data/src/index.ts"],
+      "@michaelachrisco/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

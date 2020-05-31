@@ -1,5 +1,5 @@
 import { Express } from 'express';
-import { Todo } from '@myorg/data';
+import { Todo } from '../../../../libs/data/src/lib/data';
 
 const todos: Todo[] = [{ title: 'Todo 1' }, { title: 'Todo 2' }];
 

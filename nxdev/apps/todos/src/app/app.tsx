@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Todo } from '@myorg/data';
-
+import { Todo } from '../../../../libs/data/src/lib/data';
+import { Todos } from '../../../../libs/ui/src/lib/todos/todos';
 
 const App = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -25,11 +25,7 @@ const App = () => {
   return (
     <>
       <h1>Todos</h1>
-      <ul>
-        {todos.map(t => (
-          <li className={'todo'}>{t.title}</li>
-        ))}
-      </ul>
+      <Todos todos={todos} />
       <button id={'add-todo'} onClick={addTodo}>
         Add Todo
       </button>
